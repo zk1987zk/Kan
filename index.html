@@ -23,11 +23,11 @@
         <!-- Navigation -->
         <div class="site-nav">
             <ul class="nav">
-                <li href="#">Home</li>
-                <li>Resume</li>
-                <li>Service</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li><a class="home-link active-page" onclick="showHome()" href="#">Home</a></li>
+                <li><a class="resume-link" onclick="showResume()" href="#">Resume</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
         <div class="mobile-bars">
@@ -43,7 +43,7 @@
     </header>
     <div class="site-main">
         <section class="home">
-            <div class="flex-container">
+            <div class="home-flex-container">
                 <div class="page-header">
                     <div class="photo">
                         <img src="./img/Kan.jpg" alt="Kan's photo">
@@ -56,8 +56,7 @@
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                         </div>
-                    </div>
-                    
+                    </div>                 
                 </div>
                 <div class="page-content">
                     <div class="about-me">
@@ -87,6 +86,29 @@
                                 <span class="value">+61 402 699 623</span>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="resume" style="display: none">
+            <div class="resume-flex-container">
+                <div class="resume-header">
+                    <div class="resume-header__info">
+                        <h1 class="resume-header__info_name">Resume</h1>
+                    </div>   
+                </div>
+                <div class="resume-content">
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div> 
+                            <p>UQ</p>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h3>Experience</h3>
+                        <div> 
+                            <p>JR Academy</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -40,6 +40,16 @@ body {
                 display: inline;
                 text-align: center;
                 padding: 20px;
+                
+                a {
+                    color: #9e9e9e;
+                    text-decoration: none;
+                    &:hover, &.active-page {
+                        color: #424242;
+                        border-bottom: 3px solid #2eca7f;
+                        padding: 8px 0;
+                    }
+                }
             }
         }
         .mobile-bars {
@@ -74,7 +84,7 @@ body {
             align-items: center;
         }
         .home {
-            .flex-container {
+            .home-flex-container {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 7%;
@@ -83,63 +93,106 @@ body {
                 border-radius: 15px;
                 background-color: #fff;
                 box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-            }
-            .page-header {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-around;
-                background-color: #2eca7f;
-                background-image: url(../img/sp_main_bg.png);
-                background-size: cover;
-                border-radius: 15px 15px 0 0;
-                width: 100%;
-                .photo {
-                    transform: translateY(10px);
-                    img{
-                        width: 274px;
-                        height: 274px;
-                    }
-                }
-                .page-header__info {
+                .page-header {
                     display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
+                    flex-direction: row;
                     align-items: center;
-                    &_name {
-                        color: rgb(255, 255, 255);
-                        font-size: 54px;
-                        font-weight: 700;
-                        margin: 30px 0px 0px;
+                    justify-content: space-around;
+                    background-color: #2eca7f;
+                    background-image: url(../img/sp_main_bg.png);
+                    background-size: cover;
+                    border-radius: 15px 15px 0 0;
+                    width: 100%;
+                    .photo {
+                        transform: translateY(10px);
+                        img{
+                            width: 274px;
+                            height: 274px;
+                        }
                     }
-                    &_title {
-                        color: rgb(255, 255, 255);
-                        font-size: 18px;
-                        margin: 0px;
-                    }
-                }  
-            } 
-            .page-content {
-                display: flex;
-                flex-direction: row;
-                .about-me {
-                    padding: 50px;
-                    width: 50%;
+                    .page-header__info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        &_name {
+                            color: rgb(255, 255, 255);
+                            font-size: 54px;
+                            font-weight: 700;
+                            margin: 30px 0px 0px;
+                        }
+                        &_title {
+                            color: rgb(255, 255, 255);
+                            font-size: 18px;
+                            margin: 0px;
+                        }
+                    }  
                 }
-                .info-list {
-                    padding: 50px;
-                    width: 50%;
-                    ul li {
-                        list-style: none;
-                        .title {
-                            display: inline-block;
-                            min-width: 120px;
+                .page-content {
+                    display: flex;
+                    flex-direction: row;
+                    .about-me {
+                        padding: 50px;
+                        width: 50%;
+                    }
+                    .info-list {
+                        padding: 50px;
+                        width: 50%;
+                        ul li {
+                            list-style: none;
+                            .title {
+                                display: inline-block;
+                                min-width: 120px;
+                            }
+                            .value {
+                                display: inline-block;
+                                color: #9e9e9e;
+                            }
+                        }   
+                    }
+                } 
+            }
+            
+        }
+        .resume {
+            .resume-flex-container {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 7%;
+                margin-top: 11%;
+                width:80%;
+                border-radius: 15px;
+                background-color: #fff;
+                box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+                .resume-header {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    background-color: #2eca7f;
+                    background-image: url(../img/sp_main_bg.png);
+                    background-size: cover;
+                    border-radius: 15px 15px 0 0;
+                    width: 100%;
+                    .resume-header__info {
+                        margin: 30px 0;
+                        &_name {
+                            color: rgb(255, 255, 255);
+                            font-size: 54px;
+                            font-weight: 700;
                         }
-                        .value {
-                            display: inline-block;
-                            color: #9e9e9e;
-                        }
-                }   }
+                    }  
+                }
+                .resume-content {
+                    display: flex;
+                    flex-direction: row;
+                    .education {
+                        width: 50%;
+                    }
+                    .experience {
+                        width: 50%;
+                    }
+                }   
             }
         }
     }
@@ -163,23 +216,41 @@ body {
         .site-main {
             .home {
                 margin-top: 3%;
-                .page-header {
-                    flex-wrap: wrap;
-                    .name {
-                        width: 100%;
+                .home-flex-container{
+                    .page-header {
+                        flex-wrap: wrap;
+                        .name {
+                            width: 100%;
+                        }
                     }
-                }
-                .page-content {
-                    flex-wrap: wrap;
-                    .about-me { 
-                        width: 100%;
+                    .page-content {
+                        flex-wrap: wrap;
+                        .about-me { 
+                            width: 100%;
+                        }
+                        .info-list {
+                            width: 100%;
+                        }
                     }
-                    .info-list {
-                        width: 100%;
+                }           
+            }
+            .resume {
+                margin-top: 3%;
+                .resume-flex-container{
+                    .resume-header {
+                        flex-wrap: wrap;
                     }
-                }
+                    .resume-content {
+                        flex-wrap: wrap;
+                        .education {
+                            width: 100%;
+                        }
+                        .experience {
+                            width: 100%;
+                        }
+                    }
+                } 
             }
         }
-    }
-    
+    }   
 }
