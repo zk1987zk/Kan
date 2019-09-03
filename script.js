@@ -8,6 +8,7 @@ function toggleSideNav() {
 }
 
 function showHome() {
+    let sideNav = document.querySelector(".side-nav")
     let resume = document.querySelector(".resume");
     let resumeLink = document.querySelector(".resume-link");
     let home = document.querySelector(".home");
@@ -16,10 +17,11 @@ function showHome() {
     homeLink.classList.add("active-page");
     resume.style.display = 'none';
     resumeLink.classList.remove("active-page");
-
+    sideNav.style.width = "0px";
 }
 
 function showResume() {
+    let sideNav = document.querySelector(".side-nav")
     let resume = document.querySelector(".resume");
     let resumeLink = document.querySelector(".resume-link");
     let home = document.querySelector(".home");
@@ -28,4 +30,5 @@ function showResume() {
     resumeLink.classList.add("active-page");
     home.style.display = 'none';
     homeLink.classList.remove("active-page");
+    sideNav.style.width = "0px";
 }

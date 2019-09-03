@@ -70,7 +70,7 @@ body {
                 padding: 8px 8px 8px 32px;
                 text-decoration: none;
                 font-size: 20px;
-                color: #ffffff;
+                color: #FFFFFF;
                 display: block;
             }
         }
@@ -103,10 +103,10 @@ body {
                     border-radius: 15px 15px 0 0;
                     width: 100%;
                     .photo {
-                        transform: translateY(10px);
                         img{
-                            width: 274px;
-                            height: 274px;
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
                         }
                     }
                     .page-header__info {
@@ -126,7 +126,7 @@ body {
                             margin: 30px 0px 0px;
                         }
                         .social-links {
-                            margin: 30px 0px 0px;
+                            margin: 30px 0px;
                             .fab {
                                 color: white;
                                 font-size: 2em;
