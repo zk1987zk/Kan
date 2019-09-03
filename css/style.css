@@ -125,7 +125,14 @@ body .site-main .home .home-flex-container .page-header .page-header__info_name 
 body .site-main .home .home-flex-container .page-header .page-header__info_title {
   color: white;
   font-size: 18px;
-  margin: 0px;
+  margin: 30px 0px 0px;
+}
+body .site-main .home .home-flex-container .page-header .page-header__info .social-links {
+  margin: 30px 0px 0px;
+}
+body .site-main .home .home-flex-container .page-header .page-header__info .social-links .fab {
+  color: white;
+  font-size: 2em;
 }
 body .site-main .home .home-flex-container .page-content {
   display: flex;
@@ -135,12 +142,16 @@ body .site-main .home .home-flex-container .page-content .about-me {
   padding: 50px;
   width: 50%;
 }
+body .site-main .home .home-flex-container .page-content .about-me h3 span {
+  color: #2eca7f;
+}
 body .site-main .home .home-flex-container .page-content .info-list {
   padding: 50px;
   width: 50%;
 }
 body .site-main .home .home-flex-container .page-content .info-list ul li {
   list-style: none;
+  padding: 3px 0;
 }
 body .site-main .home .home-flex-container .page-content .info-list ul li .title {
   display: inline-block;
@@ -186,8 +197,62 @@ body .site-main .resume .resume-flex-container .resume-content {
 body .site-main .resume .resume-flex-container .resume-content .education {
   width: 50%;
 }
+body .site-main .resume .resume-flex-container .resume-content .education h3 {
+  font-size: 21px;
+  margin: 5px 0 25px;
+  padding: 25px;
+}
+body .site-main .resume .resume-flex-container .resume-content .education .education-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: 2px solid #e0e0e0;
+  margin-left: 15px;
+}
 body .site-main .resume .resume-flex-container .resume-content .experience {
   width: 50%;
+}
+body .site-main .resume .resume-flex-container .resume-content .experience h3 {
+  font-size: 21px;
+  margin: 5px 0 25px;
+  padding: 25px;
+}
+body .site-main .resume .resume-flex-container .resume-content .experience .experience-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: 2px solid #e0e0e0;
+  margin-left: 15px;
+}
+body .site-main .resume .degree-job-box {
+  width: 80%;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  border: 2px solid #f5f5f5;
+  border-left: 5px solid #2eca7f;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+}
+body .site-main .resume .degree-job-box h4 {
+  display: block;
+  font-size: 16px;
+  line-height: 1.2em;
+  margin-bottom: 5px;
+}
+body .site-main .resume .degree-job-box .degree-job-box_period {
+  color: #2eca7f;
+}
+body .site-main .resume .degree-job-box .degree-job-box_place {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #9e9e9e;
+  margin-left: 5px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  border-left: 1px solid #e0e0e0;
+}
+body .site-main .resume .degree-job-box p {
+  line-height: 1.2em;
 }
 body footer {
   margin-bottom: 12px;

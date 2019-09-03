@@ -34,8 +34,8 @@
             <span style="cursor:pointer" onclick="toggleSideNav()">&#9776;</span>
         </div> 
         <div class="side-nav">
-                <a href="#">Home</a>
-                <a href="#">Resume</a>
+                <a class="home-link active-page" onclick="showHome()" href="#">Home</a>
+                <a class="resume-link" onclick="showResume()" href="#">Resume</a>
                 <a href="#">Service</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
@@ -52,15 +52,15 @@
                         <h1 class="page-header__info_name">Kan Zhang</h1>
                         <span class="page-header__info_title">Web Developer</span>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/kan--zhang/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/zk1987zk"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/kan.zhang.5245"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>                 
                 </div>
                 <div class="page-content">
                     <div class="about-me">
-                        <h4>About Me</h4>
+                        <h3>About <span>Me</span></h3>
                         <p>A full stack developer who is passionate of learning the fast-growing modern web technology. Also a maths lover who is curious about computer science and data science.</p>
                     </div>
                     <div class="info-list">
@@ -75,7 +75,7 @@
                             </li>
                             <li>
                                 <span class="title">Address</span> 
-                                <span class="value">4/18 Mornington Court, Brisbane</span>
+                                <span class="value">Brisbane, QLD, Australia</span>
                             </li>
                             <li>
                                 <span class="title">Email</span> 
@@ -100,15 +100,37 @@
                 <div class="resume-content">
                     <div class="education">
                         <h3>Education</h3>
-                        <div> 
-                            <p>UQ</p>
+                        <div class="education-flex-container"> 
+                            <div class="degree-job-box">
+                                <h4>Bachelor of Sciecne</h4>
+                                <span class="degree-job-box_period">2014-2018</span>
+                                <span class="degree-job-box_place">UQ</span>
+                                <p class="degree-job-box_desc">Have built solid mathematical foundation in calculus, algebra, probability theory, computational science, operation research, optimisation theory, financial mathematics, abstract algebra, number theory, graph theory and set theory.</p>
+                            </div>
+                            <div class="degree-job-box">
+                                    <h4>Bachelor of IT</h4>
+                                    <span class="degree-job-box_period">2014-2018</span>
+                                    <span class="degree-job-box_place">UQ</span>
+                                    <p class="degree-job-box_desc">Have built solid foundation in Python, Java, HTML, CSS, JS, back-end database system, algorithms and data structure.</p>
+                            </div>
+                            <div class="degree-job-box">
+                                    <h4>Master of Data Science</h4>
+                                    <span class="degree-job-box_period">2019-2021</span>
+                                    <span class="degree-job-box_place">UNSW</span>
+                                    <p class="degree-job-box_desc">Solid understanding statistical inference, regression analysis, bayesian inference, multivariate analysis, data mining, machine learning,  neural networks, deep learning, business strategic decision making, data visualisation and communication.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="experience">
                         <h3>Experience</h3>
-                        <div> 
-                            <p>JR Academy</p>
-                        </div>
+                        <div class="experience-flex-container"> 
+                                <div class="degree-job-box">
+                                    <h4>JR Academy</h4>
+                                    <span class="degree-job-box_period">July 2019-present</span>
+                                    <span class="degree-job-box_place">Brisbane</span>
+                                    <p class="degree-job-box_desc">Javascript performance, Commercial experience with Material UI, Redux, Saga, Webpack, babel. Integrating with RESTful APIs. Code conversioning(bitbucket, git). Implementing in responsive designs. Working in an Agile team. Extensive NodeJS development experience</p>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
